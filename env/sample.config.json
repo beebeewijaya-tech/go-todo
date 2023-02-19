@@ -1,0 +1,17 @@
+{
+    "SERVER": {
+        "ADDRESS": "localhost",
+        "PORT": 9000
+    },
+    "DB": {
+        "HOST": "localhost",
+        "PORT": 5432,
+        "DATABASE": "",
+        "USERNAME": "",
+        "PASSWORD": "",
+        "DIALECT": "postgres"
+    },
+    "JWT": {
+        "SECRETKEY": ""
+    }
+}

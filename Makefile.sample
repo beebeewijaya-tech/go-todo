@@ -1,0 +1,10 @@
+migrate-up:
+	migrate -path db/migrations -database "postgres://user:password@host:port/dbname?sslmode=disable" -verbose up
+
+migrate-down:
+	migrate -path db/migrations -database "postgres://user:password@host:port/dbname?sslmode=disable" -verbose down
+
+test:
+	go test ./...
+
+.PHONY: migrate-up migrate-down test
