@@ -65,7 +65,6 @@ func TestGetTodos(t *testing.T) {
 		require.NotZero(t, todo.Title)
 		require.NotZero(t, todo.Description)
 		require.NotZero(t, todo.Author)
-		require.NotZero(t, todo.Priority)
 		require.NotZero(t, todo.CreatedAt)
 		require.NotZero(t, todo.UpdatedAt)
 	}

@@ -5,6 +5,9 @@ migrate-down:
 	migrate -path db/migrations -database "postgres://user:password@host:port/dbname?sslmode=disable" -verbose down
 
 test:
-	go test ./...
+	go test ./... -v -cover
 
-.PHONY: migrate-up migrate-down test
+mock-sql:
+	mockgen -destination=.\db\sql\mock_sql\mock_sql.go -source=.\db\sql\queries.go
+
+.PHONY: migrate-up migrate-down test mock_sql
