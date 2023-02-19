@@ -5,3 +5,5 @@ CREATE TABLE users (
     "password" varchar NOT NULL,
     "created_at" timestamptz NOT NULL DEFAULT (NOW())
 );
+
+CREATE INDEX ON "users" ("email");

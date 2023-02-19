@@ -7,3 +7,6 @@ CREATE TABLE todos (
     "created_at" timestamptz NOT NULL DEFAULT (NOW()),
     "updated_at" timestamptz NOT NULL DEFAULT (NOW())
 );
+
+
+CREATE INDEX ON "todos" ("author");
